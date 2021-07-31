@@ -195,5 +195,3 @@ result
 import pickle
 filename = 'model.pkl'
 pickle.dump(logreg, open(filename, 'wb'))
-pickle.dump(dt, open(filename, 'wb'))
-pickle.dump(kc, open(filename, 'wb'))
