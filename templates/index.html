@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style.css" />
     <title>PREMIUM POLICY</title>
   </head>
   <body style="background-color: blueviolet">
@@ -18,67 +18,66 @@
     </h4>
     <hr />
     <br />
-    <form method = "POST" action="/predict">
-    <div class="container">
-      CUSTOMER ID:<input type="text" /> <br />
-      Percent Premium Paid by Cash Credit :<input type="text" /> <br />
-      Age in ndays :<input type="text" /> <br />
-      INCOME :<input type="text" /> <br />
-      Count 3-6 months late:<input type="text" /> <br />
-      Count 6-12 months late:<input type="text" /> <br />
-      Count more than 12 months late:<input type="text" /> <br />
-      Application underwriting score:<input type="text" /> <br />
-      No of premiums paid: <input type="text" />
-    </div>
-<br>
-    <div class="box">
+    <form method="POST" action="/predict">
+      <div class="container">
+        CUSTOMER ID:<input type="text" /> <br />
+        Percent Premium Paid by Cash Credit :<input type="text" /> <br />
+        Age in ndays :<input type="text" /> <br />
+        INCOME :<input type="text" /> <br />
+        Count 3-6 months late:<input type="text" /> <br />
+        Count 6-12 months late:<input type="text" /> <br />
+        Count more than 12 months late:<input type="text" /> <br />
+        Application underwriting score:<input type="text" /> <br />
+        No of premiums paid: <input type="text" />
+      </div>
       <br />
-      Sourcing channel:
-      <input type="radio" name="sourcing channel" id="A" /><label for="A"
-        >A</label
-      >
-      <input type="radio" name="sourcing channel" id="" /><label for="B"
-        >B</label
-      >
-      <input type="radio" name="sourcing channel" id="C" /><label for="C"
-        >C</label
-      >
-      <input type="radio" name="sourcing channel" id="D" /><label for="D"
-        >D</label
-      >
-      <input type="radio" name="sourcing channel" id="E" /><label for="E"
-        >E</label
-      >
+      <div class="box">
+        <br />
+        Sourcing channel:
+        <input type="radio" name="sourcing channel" id="A" /><label for="A"
+          >A</label
+        >
+        <input type="radio" name="sourcing channel" id="" /><label for="B"
+          >B</label
+        >
+        <input type="radio" name="sourcing channel" id="C" /><label for="C"
+          >C</label
+        >
+        <input type="radio" name="sourcing channel" id="D" /><label for="D"
+          >D</label
+        >
+        <input type="radio" name="sourcing channel" id="E" /><label for="E"
+          >E</label
+        >
+        <br />
+        Residence: <input type="radio" name="urban" id="URBAN" /><label
+          for="URBAN"
+          >URBAN</label
+        ><input type="radio" name="RURAL" id="RURAL" /><label for="RURAL"
+          >RURAL</label
+        >
+        <br />
+        Age Group: <input type="radio" name="Age Group" id="TEENAGER" /><label
+          for="TEENAGER"
+          >TEENAGER</label
+        >
+        <input type="radio" name="Age Group" id="ADULT" /><label for="ADULT"
+          >ADULT</label
+        >
+        <input type="radio" name="Age Group" id="OLD" /><label for="OLD"
+          >OLD</label
+        >
+        <br />
+        STATUS: <input type="radio" name="POOR" id="POOR" /><label for="POOR"
+          >POOR</label
+        ><input type="radio" name="POOR" id="RICH" /><label for="RICH"
+          >RICH</label
+        >
+        <br />
+      </div>
       <br />
-      Residence: <input type="radio" name="urban" id="URBAN" /><label
-        for="URBAN"
-        >URBAN</label
-      ><input type="radio" name="RURAL" id="RURAL" /><label for="RURAL"
-        >RURAL</label
-      >
-      <br />
-      Age Group: <input type="radio" name="Age Group" id="TEENAGER" /><label
-        for="TEENAGER"
-        >TEENAGER</label
-      >
-      <input type="radio" name="Age Group" id="ADULT" /><label for="ADULT"
-        >ADULT</label
-      >
-      <input type="radio" name="Age Group" id="OLD" /><label for="OLD"
-        >OLD</label
-      >
-      <br />
-      STATUS: <input type="radio" name="POOR" id="POOR" /><label for="POOR"
-        >POOR</label
-      ><input type="radio" name="POOR" id="RICH" /><label for="RICH"
-        >RICH</label
-      >
-      </form>
-      <br />
-   
-    </div> 
+      <input type="submit" class="button" />
+    </form>
     <br />
-    <button type="submit" class="btn">SUBMIT</button>   
-    <br>
   </body>
 </html>
