@@ -116,7 +116,9 @@ y_test.shape
 
 logreg.score(x_test1,y_test)
 
-logreg.predict(x_test)
+result=logreg.predict(x_test)
+
+result
 
 """DECISION TREE MODEL
 
@@ -153,13 +155,15 @@ dt.predict(test_x1)
 test=pd.get_dummies(test)
 test1=Scaler.fit_transform(test)
 
-pred_dt=dt.predict_proba(test_x1)
+dt.predict_proba(test_x1)
 
 x_test1.shape
 
 pred_logreg=logreg.fit(x_test,y_test)
 
-pred_logreg=logreg.predict_proba(x_test)
+result=logreg.predict_proba(x_test)
+
+result
 
 """KNEIGHBORS MODEL"""
 
@@ -183,3 +187,13 @@ kc.fit(x_train,y_train)
 pred=kc.predict(x_test)
 result=metrics.accuracy_score(y_test,pred)
 result
+
+"""DEPLOYMENT
+
+"""
+
+import pickle
+filename = 'model.pkl'
+pickle.dump(logreg, open(filename, 'wb'))
+pickle.dump(dt, open(filename, 'wb'))
+pickle.dump(kc, open(filename, 'wb'))
